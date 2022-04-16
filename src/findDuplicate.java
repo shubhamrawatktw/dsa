@@ -14,15 +14,24 @@ public class findDuplicate {
 
     public static int duplicate(int[] input) {
         
-        for (int i = 0; i < input.length; i++) {
-            for (int j = 0; j < input.length; j++) {
+        // for (int i = 0; i < input.length; i++) {
+        //     for (int j = 0; j < input.length; j++) {
                 
-                if (i!=j) {
+        //         if (i!=j) {
                     
-                    if (input[i]==input[j]) {
-                         System.out.println( "the answer is  :" + input[i]);
-                         return input[i];
-                    }
+        //             if (input[i]==input[j]) {
+        //                  System.out.println( "the answer is  :" + input[i]);
+        //                  return input[i];
+        //             }
+        //         }
+        //     }
+        // }
+
+        for (int i = 0; i < input.length; i++) {
+            for (int j = i+1; j < input.length; j++) {
+                if (input[i]==input[j]) {
+                    System.out.println("duplicate one is : "+input[i]);
+                    return input[i];
                 }
             }
         }

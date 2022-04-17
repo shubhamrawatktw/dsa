@@ -1,7 +1,7 @@
 public class BubbleSort {
 public static void bubbleSort(int[] input) {
     for (int i = 0; i < input.length-1; i++) {
-        for (int j = i+1; j < input.length; j++) {
+        for (int j = i+1; j < input.length-i-1; j++) {
             // if (input[i]<=input[j]) {
             //     break;
             // }
